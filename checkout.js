@@ -79,17 +79,17 @@ removal2.addEventListener("click", ()=>{
 
 quantitiy3.children.item(2).addEventListener("click", ()=>{
     +(quantitiy3.children.item(1).innerText)++;
-    subTotal.children.item(1).innerText = +subTotal.children.item(1).innerText + 74.99;
-    tax.children.item(1).innerText = +tax.children.item(1).innerText + 74.99*0.18;
-    total.children.item(1).innerText = +total.children.item(1).innerText + 74.99*1.18;
+    subTotal.children.item(1).innerText = (+subTotal.children.item(1).innerText + 74.99).toFixed(2);
+    tax.children.item(1).innerText = (+tax.children.item(1).innerText + 74.99*0.18).toFixed(2);
+    total.children.item(1).innerText = (+total.children.item(1).innerText + 74.99*1.18).toFixed(2);
     price2.innerText = (+price2.innerText + 74.99).toFixed(2);
 })
 quantitiy3.children.item(0).addEventListener("click", ()=>{
     if ( +(quantitiy3.children.item(1).innerText) == 1) return;
     +(quantitiy3.children.item(1).innerText)--;
-    subTotal.children.item(1).innerText = +subTotal.children.item(1).innerText - 74.99;
-    tax.children.item(1).innerText = +tax.children.item(1).innerText - 74.99*0.18;
-    total.children.item(1).innerText = +total.children.item(1).innerText - 74.99*1.18;
+    subTotal.children.item(1).innerText = (+subTotal.children.item(1).innerText - 74.99).toFixed(2);
+    tax.children.item(1).innerText = (+tax.children.item(1).innerText - 74.99*0.18).toFixed(2);
+    total.children.item(1).innerText = (+total.children.item(1).innerText - 74.99*1.18).toFixed(2);
     price2.innerText = (+price2.innerText - 74.99).toFixed(2);
 })
 removal3.addEventListener("click", ()=>{
