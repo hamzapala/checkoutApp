@@ -11,6 +11,7 @@ window.addEventListener("load", () =>{
 let productsDiv = document.querySelector(".products");
 productsDiv.addEventListener("click", (e) =>{
     let quantityP = e.target.parentElement.parentElement.querySelector("#product-quantity");
+    //? Pivot eleman(quantityP)
     if(e.target.classList.contains("fa-minus") || e.target == quantityP.parentElement.firstElementChild){
         if(quantityP.innerText > 1){
             quantityP.innerText--;
